@@ -31,6 +31,7 @@ get_element("calculate-btn").addEventListener("click", function () {
     );
 
     get_element("player-cost").innerText = total_player_cost;
+    perPlayerCostField.value = "";
   }
 });
 get_element("calculate-total-btn").addEventListener("click", function () {
@@ -48,6 +49,8 @@ get_element("calculate-total-btn").addEventListener("click", function () {
     );
 
     get_element("total-cost").innerText = "$" + total_cost;
+    managerCostField.value = "";
+    coachCostField.value = "";
   }
 });
 
