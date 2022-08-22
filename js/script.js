@@ -1,34 +1,45 @@
-function is_slot_empty(child_count) {
-  if (child_count < 5) {
-    return true;
+const selectedPlyers = get_element("selected-player-list");
+const perPlayerCostField = get_element("per-player-cost-field");
+get_element("cards-section").addEventListener("click", function (event) {
+  slot_empty = is_slot_empty(selectedPlyers.childElementCount);
+  const currentElement = event.target;
+  if (
+    currentElement.innerText == "Select" &&
+    !currentElement.disabled &&
+    slot_empty
+  ) {
+    const li_element = document.createElement("li");
+    li_element.setAttribute("class", "py-3");
+    const span_inside_li = document.createElement("span");
+    span_inside_li.setAttribute("class", "gap");
+    span_inside_li.innerText =
+      currentElement.parentElement.firstElementChild.innerText;
+
+    li_element.appendChild(span_inside_li);
+
+    //   li_element.innerText =
+    //     currentElement.parentElement.firstElementChild.innerText;
+    selectedPlyers.appendChild(li_element);
+    currentElement.setAttribute("disabled", "");
+    currentElement.style.backgroundColor = "rgb(148 163 184)";
   }
-  return false;
-}
-function change_disabled_btn_color(btn_element) {}
-document
-  .getElementById("cards-section")
-  .addEventListener("click", function (event) {
-    const selectedPlyers = document.getElementById("selected-player-list");
-    slot_empty = is_slot_empty(selectedPlyers.childElementCount);
-    const currentElement = event.target;
-    if (
-      currentElement.innerText == "Select" &&
-      !currentElement.disabled &&
-      slot_empty
-    ) {
-      const li_element = document.createElement("li");
-      li_element.setAttribute("class", "py-3");
-      const span_inside_li = document.createElement("span");
-      span_inside_li.setAttribute("class", "gap");
-      span_inside_li.innerText =
-        currentElement.parentElement.firstElementChild.innerText;
+});
 
-      li_element.appendChild(span_inside_li);
+get_element("calculate-btn").addEventListener("click", function () {
+  const total_player_cost = count_total_player_expense(
+    selectedPlyers.childElementCount,
+    perPlayerCostField.value
+  );
+  get_element("player-cost").innerText = total_player_cost;
+});
+get_element("calculate-total-btn").addEventListener("click", function () {
+  const managerCostField = document.getElementById("manager-cost-field");
+  const coachCostField = document.getElementById("coach-cost-field");
+  const total_cost = get_total_cost(
+    get_element("player-cost").innerText,
+    managerCostField.value,
+    coachCostField.value
+  );
 
-      //   li_element.innerText =
-      //     currentElement.parentElement.firstElementChild.innerText;
-      selectedPlyers.appendChild(li_element);
-      currentElement.setAttribute("disabled", "");
-      currentElement.style.backgroundColor = "rgb(148 163 184)";
-    }
-  });
+  get_element("total-cost").innerText = "$" + total_cost;
+});
