@@ -16,20 +16,20 @@
     <title>Document</title>
   </head>
   <body class="bg-zinc-800">
-    <header class=":w-full bg-black relative header">
+    <header class="w-full bg-black relative header">
       <img
         src="images/header_image_main.png"
-        class="inline-block w-80 absolute bottom-0 left-4 z-10"
+        class="inline-block w-60 z-10 lg:w-96 absolute left-16 lg:bottom-0 left-4"
         alt=""
       />
       <img
         src="images/header_image_backgr.png"
-        class="inline-block w-2/6 text-zinc-500 skew-y-12 skew-x-6 absolute bottom-16 header-crown-img"
+        class="inline-block w-66 lg:w-4/12 text-zinc-500 skew-y-12 skew-x-6 lg:absolute z-5 bottom-16 header-crown-img"
         alt=""
       />
 
       <div
-        class="text-center absolute top-2/4 left-2/4 w-5/12 heading-content-box"
+        class="text-center py-32 lg:absolute top-2/4 left-2/4 lg:w-5/12 heading-content-box"
       >
         <h1 class="heading-main text-orange-600 text-7xl mb-8 font-medium">
           Select Your Best five
@@ -39,17 +39,22 @@
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </h2>
+        <img
+          src="images/underline.svg"
+          class="heading-underline-img absolute top-30"
+          alt=""
+        />
       </div>
 
       <div class="relative top-1/4">
         <img
           src="images/messi.jpg"
-          class="w-56 inline-block rounded-3xl absolute right-64"
+          class="hidden w-56 lg:inline-block rounded-3xl absolute right-64"
           alt=""
         />
         <img
           src="images/header_logo.png"
-          class="inline-block w-28 absolute logo-img"
+          class="hidden lg:inline-block w-28 absolute logo-img"
           alt=""
         />
       </div>
@@ -57,7 +62,7 @@
     <main class="mt-44">
       <section class="container mx-auto" id="cards-section">
         <div
-          class="grid grid-cols-4 grid-rows-4 gap-x-10 gap-y-10 font-semibold px-12"
+          class="grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-10 font-semibold px-12"
         >
           <div class="w-full text-center bg-black">
             <img
@@ -119,8 +124,15 @@
               </button>
             </div>
           </div>
-          <div class="w-full text-center bg-black text-white py-16">
-            <h1 class="text-3xl text-semibold">Selected-V</h1>
+          <div
+            class="w-full text-center bg-black text-white py-16 order-last lg:order-none"
+          >
+            <h1 class="text-3xl text-semibold relative">
+              Selected-V
+              <span
+                ><img class="ml-24 mt-1" src="images/lines.svg" alt=""
+              /></span>
+            </h1>
             <ol
               role="list"
               class="list-decimal list-inside text-left px-5 mt-12 marker:font-extrabold marker:text-gray-500 ml-9 text-xl"
@@ -188,7 +200,7 @@
             </div>
           </div>
           <div
-            class="w-full text-center bg-black row-span-2 h-5/6 text-white py-8 px-4 flex flex-col gap-y-10"
+            class="w-full text-center bg-black row-span-2 h-5/6 text-white py-8 px-4 flex flex-col gap-y-10 order-last lg:order-none"
           >
             <h1 class="text-3xl text-semibold">Budget</h1>
             <div class="flex justify-between">

@@ -2,6 +2,7 @@ function is_slot_empty(child_count) {
   if (child_count < 5) {
     return true;
   }
+
   return false;
 }
 function get_element(id) {
@@ -14,4 +15,11 @@ function get_total_cost(player_cost, manager_cost, coach_cost) {
   return (
     parseFloat(player_cost) + parseFloat(manager_cost) + parseFloat(coach_cost)
   );
+}
+function valid_value(value) {
+  if (isNaN(value) || value < 0) {
+    alert("Please Enter a Valid amount");
+    return false;
+  }
+  return true;
 }

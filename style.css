@@ -1,19 +1,27 @@
-.header {
-  height: 70vh;
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 70vh;
+  }
+  .heading-content-box {
+    transform: translate(-50%, -50%);
+  }
+  .logo-img {
+    top: -4rem;
+    right: 26rem;
+  }
+  .header-crown-img {
+    left: -3.5rem;
+  }
+  .heading-underline-img {
+    transform: rotate(-12deg);
+    right: -6rem;
+  }
 }
-.header-crown-img {
-  left: -3.5rem;
-}
+
 .heading-main {
   font-family: "Berkshire Swash", cursive;
 }
-.heading-content-box {
-  transform: translate(-50%, -50%);
-}
-.logo-img {
-  top: -4rem;
-  right: 26rem;
-}
+
 .square {
   height: 5px;
   width: 5px;
@@ -21,4 +29,8 @@
 }
 .gap {
   margin-left: 2rem;
+}
+.heading-underline-img {
+  transform: rotate(-12deg);
+  right: -1rem;
 }
