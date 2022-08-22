@@ -14,8 +14,6 @@ get_element("cards-section").addEventListener("click", function (event) {
 
       li_element.appendChild(span_inside_li);
 
-      //   li_element.innerText =
-      //     currentElement.parentElement.firstElementChild.innerText;
       selectedPlyers.appendChild(li_element);
       currentElement.setAttribute("disabled", "");
       currentElement.style.backgroundColor = "rgb(148 163 184)";
@@ -31,7 +29,7 @@ get_element("calculate-btn").addEventListener("click", function () {
       selectedPlyers.childElementCount,
       perPlayerCostField.value
     );
-    console.log(total_player_cost);
+
     get_element("player-cost").innerText = total_player_cost;
   }
 });
