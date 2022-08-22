@@ -52,3 +52,5 @@ get_element("calculate-total-btn").addEventListener("click", function () {
     get_element("total-cost").innerText = "$" + total_cost;
   }
 });
+
+get_element("current-year").innerText = new Date().getFullYear();
