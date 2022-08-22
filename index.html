@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-zinc-800">
+    <header class=":w-full bg-black relative header">
+      <img
+        src="images/header_image_main.png"
+        class="inline-block w-80 absolute bottom-0 left-4 z-10"
+        alt=""
+      />
+      <img
+        src="images/header_image_backgr.png"
+        class="inline-block w-2/6 text-zinc-500 skew-y-12 skew-x-6 absolute bottom-16 header-crown-img"
+        alt=""
+      />
+
+      <div
+        class="text-center absolute top-2/4 left-2/4 w-5/12 heading-content-box"
+      >
+        <h1 class="heading-main text-orange-600 text-7xl mb-8 font-medium">
+          Select Your Best five
+        </h1>
+        <h2 class="heading-secondary text-white text-xl">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </h2>
+      </div>
+
+      <div class="relative top-1/4">
+        <img
+          src="images/messi.jpg"
+          class="w-56 inline-block rounded-3xl absolute right-64"
+          alt=""
+        />
+        <img
+          src="images/header_logo.png"
+          class="inline-block w-28 absolute logo-img"
+          alt=""
+        />
+      </div>
+    </header>
+    <main class="mt-44">
+      <section class="container mx-auto">
+        <div
+          class="grid grid-cols-4 grid-rows-4 gap-x-10 gap-y-10 font-semibold px-12"
+        >
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/Cristiano_Ronaldo.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Cristiano Ronaldo</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>40 Goals</p>
+                <p class="square mt-3"></p>
+                <p>151 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/messi_smile.webp"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Lionel Messi</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>36 Goals</p>
+                <p class="square mt-3"></p>
+                <p>120 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/andres.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Andres Iniesta</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>25 Goals</p>
+                <p class="square mt-3"></p>
+                <p>135 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black text-white py-16">
+            <h1 class="text-3xl text-semibold">Selected-V</h1>
+            <ol
+              role="list"
+              class="list-decimal list-inside text-left px-5 mt-12 marker:font-extrabold marker:text-gray-500 ml-9 text-xl"
+              id="player-list"
+            >
+              <li class="py-3"><span class="gap"></span> leonel Messi</li>
+              <li class="py-3"><span class="gap"></span> leonel Messi</li>
+              <li class="py-3"><span class="gap"></span> leonel Messi</li>
+              <li class="py-3"><span class="gap"></span> leonel Messi</li>
+              <li class="py-3"><span class="gap"></span> leonel Messi</li>
+            </ol>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/bale.webp"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Gareth Bale</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>29 Goals</p>
+                <p class="square mt-3"></p>
+                <p>110 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/dani.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Dani Carvajal</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>14 Goals</p>
+                <p class="square mt-3"></p>
+                <p>110 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/luka.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Luka Modrić</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>42 Goals</p>
+                <p class="square mt-3"></p>
+                <p>124 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full text-center bg-black row-span-2 h-5/6 text-white py-8 px-4 flex flex-col gap-y-10"
+          >
+            <h1 class="text-3xl text-semibold">Budget</h1>
+            <div class="flex justify-between">
+              <label
+                for="player-cost"
+                class="justify-self-start text-xl text-gray-400"
+                >Per Player</label
+              >
+              <input
+                type="text"
+                name="player-cost"
+                class="ml-5 w-3/6 bg-black border-solid border-2 border-white h-11"
+              />
+            </div>
+            <button
+              class="inline-block py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+            >
+              Calculate
+            </button>
+            <div class="flex justify-between">
+              <h3 class="text-xl text-gray-400">Per PLayer Expence</h3>
+              <h3 class="text-xl">$5000</h3>
+            </div>
+            <div class="flex justify-between">
+              <label
+                for="manager-cost"
+                class="justify-self-start text-xl text-gray-400"
+                >Manager</label
+              >
+              <input
+                type="text"
+                name="manager-cost"
+                class="w-3/6 ml-5 bg-black border-solid border-2 border-white h-11"
+              />
+            </div>
+            <div class="flex justify-between">
+              <label
+                for="coach-cost"
+                class="justify-self-start text-xl text-gray-400"
+                >Coach</label
+              >
+              <input
+                type="text"
+                name="coach-cost"
+                class="w-3/6 ml-5 bg-black border-solid border-2 border-white h-11"
+              />
+            </div>
+            <button
+              class="inline-block py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+            >
+              Calculate Total
+            </button>
+            <div class="flex justify-between">
+              <h3 class="text-xl text-gray-400">Total</h3>
+              <h3 class="text-orange-600 text-xl">$5000</h3>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/Karim.webp"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Karim Benzema</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>27 Goals</p>
+                <p class="square mt-3"></p>
+                <p>119 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/marcelo.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Marcelo Vieira</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>40 Goals</p>
+                <p class="square mt-3"></p>
+                <p>121 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/ramos.webp"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Sergio Ramos</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>39 Goals</p>
+                <p class="square mt-3"></p>
+                <p>130 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/toni.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">LToni Kroos</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>38 Goals</p>
+                <p class="square mt-3"></p>
+                <p>105 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/xavi.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Xavi Hernández</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>39 Goals</p>
+                <p class="square mt-3"></p>
+                <p>136 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-full text-center bg-black">
+            <img
+              src="images/piqu.jpg"
+              class="inline-block w-full h-80"
+              alt=""
+            />
+            <div class="flex flex-col gap-y-5 px-5 py-4">
+              <h1 class="text-4xl text-white">Gerard Piqué</h1>
+              <div class="flex justify-around text-slate-500 text-lg">
+                <p>30 Goals</p>
+                <p class="square mt-3"></p>
+                <p>133 Assists</p>
+              </div>
+              <button
+                class="inline-block px-12 py-3 bg-blue-700 w-full text-lg text-white rounded-lg hover:bg-sky-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-32">
+      <div class="border-t-2 border-gray-400">
+        <p class="text-center text-2xl text-white py-24">
+          Copyright @ 2022 All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

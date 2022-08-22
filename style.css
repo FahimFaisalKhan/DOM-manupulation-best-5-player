@@ -1,0 +1,24 @@
+.header {
+  height: 70vh;
+}
+.header-crown-img {
+  left: -3.5rem;
+}
+.heading-main {
+  font-family: "Berkshire Swash", cursive;
+}
+.heading-content-box {
+  transform: translate(-50%, -50%);
+}
+.logo-img {
+  top: -4rem;
+  right: 26rem;
+}
+.square {
+  height: 5px;
+  width: 5px;
+  background-color: rgb(100 116 139);
+}
+.gap {
+  margin-left: 2rem;
+}
